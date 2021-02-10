@@ -279,8 +279,8 @@ option_list = list(
                                 help="Specific 3D genome windows being used/Specific constant window size being used (in kb). Options: loop, tad, pchic, 250, 1000, etc. [required]"),
 		make_option("--window_path", action="store", default=NA, type='character',
 				help="Path to 3D genome windows bed file. [only required for method == 3d]"),
-		make_option("--bedtool_path", action="store", default=NA, type='character',
-                                help="Path to bedtool software. [required]"),
+		make_option("--bedtools_path", action="store", default=NA, type='character',
+                                help="Path to bedtools software. [required]"),
 		make_option("--epi_path", action="store", default=NA, type='character',
                                 help="Path to epigenomic data in bed file format. [required]"),
 		make_option("--fold", action="store", default=5, type='integer',
@@ -302,7 +302,7 @@ opt = parse_args(OptionParser(option_list=option_list))
 #opt$method = "constant"
 #opt$type = "250"
 #opt$window_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/LCL_chr22_pchic.txt"
-#opt$bedtool_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/bedtools"
+#opt$bedtools_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/bedtools"
 #opt$epi_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/ENCFF028SGJ_chr22_screen.bed"
 #opt$fold = 5
 #opt$total_file_num = 10
@@ -377,7 +377,7 @@ if (opt$total_file_num > 1){
 cat( "UPDATE: Processing epigenomic data\n" , file=stderr())
 geno_bed = data.frame("chr" = paste("chr", geno$chromosome, sep = ""), "start" = geno$start, "end" = geno$end, "snpid" = rownames(geno))
 write.table(geno_bed %>% select(-c("snpid")), paste(opt$out, "/genotype_temp_", opt$type, "_", opt$file_num, ".bed", sep = ""), col.names = FALSE, row.names = FALSE, sep = "\t", quote = FALSE)
-arg = paste( opt$bedtool_path, " intersect -a ", paste(opt$out, "/genotype_temp_", opt$type, "_", opt$file_num, ".bed", sep = ""), " -b ", opt$epi_path,
+arg = paste( opt$bedtools_path, " intersect -a ", paste(opt$out, "/genotype_temp_", opt$type, "_", opt$file_num, ".bed", sep = ""), " -b ", opt$epi_path,
                 " -wa -wb > ", paste(opt$out, "/genotype_epigenomic_overlap_", opt$type, "_", opt$file_num, ".bed", sep = ""), sep = "" )
 system(arg)
 
