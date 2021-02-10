@@ -76,5 +76,5 @@ Chachrit (Poom) Khunsriraksakul - [@ChachritK](https://twitter.com/ChachritK) - 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Dajiang J. Liu](https://dajiangliu.blog/)
-* [Othneil Drew](https://github.com/othneildrew) (README organization)
+* [Othneil Drew](https://github.com/othneildrew) (README template)
 
