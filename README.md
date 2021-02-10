@@ -23,7 +23,7 @@ To run PUMICE, two steps are required.
       --chr [Chromosome number]
       --exp [Path to expression data]
       --out [Path to output directory]
-      --method [Window type to be used for creating models]
+      --method [Window type to be used "for" creating models]
       --type [Specific 3D genome windows being used/Specific constant window size being used (in kb)]
       --window_path [Path to 3D genome windows bed file]
       --bedtool_path [Path to bedtools software]
@@ -33,7 +33,7 @@ To run PUMICE, two steps are required.
       --file_num [Job number]
       --noclean [Do not delete any temporary files]
    ```
-2. Second, we need to run cross-validaiton to create gene expression prediction models.
+2. Second, we need to run cross-validation to create gene expression prediction model using window type and penalty factor derived from the first step.
 ```sh
    Rscript PUMICE.compute_weights.R
    ```
