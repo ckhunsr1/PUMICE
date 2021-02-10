@@ -53,7 +53,7 @@ To run PUMICE, two steps are required.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-We provided example data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip)
+We provided example data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip).
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
