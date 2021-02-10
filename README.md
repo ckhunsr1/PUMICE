@@ -3,7 +3,7 @@
 
 PUMICE (Prediction Using Models Informed by Chromatin conformations and Epigenomics) is a tool to create gene expression prediction models for transcriptome-wide association studies. Specifically, PUMICE leverages tissue-specific 3D genomic and epigenomic data to define regions that harbor cis-regulatory variants and prioritize them accordingly.
 
-![Product Name Screen Shot][product-screenshot]](https://github.com/ckhunsr1/PUMICE/blob/master/image/PUMICE_overview_github.tif)
+![Product Name Screen Shot][product-screenshot]]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -82,3 +82,4 @@ Chachrit (Poom) Khunsriraksakul - [@ChachritK](https://twitter.com/ChachritK) - 
 * [Dajiang J. Liu](https://dajiangliu.blog/)
 * [Othneil Drew](https://github.com/othneildrew) (README template)
 
+[product-screenshot]: https://github.com/ckhunsr1/PUMICE/blob/master/image/PUMICE_overview_github.tif
