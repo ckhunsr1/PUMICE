@@ -226,15 +226,15 @@ option_list = list(
                 make_option("--out", action="store", default=NA, type='character',
                                 help="Path to output directory where output/temporary files are stored [required]"),
 		make_option("--pchic_path", action="store", default=NA, type='character',
-                                help="Path to pchic windows bed file. [required]"),
+                                help="Path to pchic window file. [required]"),
 		make_option("--loop_path", action="store", default=NA, type='character',
-                                help="Path to loop windows bed file. [required]"),
+                                help="Path to loop window file. [required]"),
 		make_option("--tad_path", action="store", default=NA, type='character',
-                                help="Path to tad windows bed file. [required]"),
+                                help="Path to tad window file. [required]"),
 		make_option("--domain_path", action="store", default=NA, type='character',
-                                help="Path to domain windows bed file. [required]"),
-                make_option("--bedtool_path", action="store", default=NA, type='character',
-                                help="Path to bedtool software. [required]"),
+                                help="Path to domain window file. [required]"),
+                make_option("--bedtools_path", action="store", default=NA, type='character',
+                                help="Path to bedtools software. [required]"),
                 make_option("--epi_path", action="store", default=NA, type='character',
                                 help="Path to epigenomic data in bed file format. [required]"),
                 make_option("--fold", action="store", default=5, type='integer',
@@ -253,7 +253,7 @@ opt = parse_args(OptionParser(option_list=option_list))
 #opt$loop_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/LCL_chr22_loop.txt"
 #opt$tad_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/LCL_chr22_tad.txt"
 #opt$domain_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/LCL_chr22_domain.txt"
-#opt$bedtool_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/bedtools"
+#opt$bedtools_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/bedtools"
 #opt$epi_path = "/gpfs/group/dxl46/default/private/poom/GTEx/master_code/all/github/ENCFF028SGJ_chr22_screen.bed"
 #opt$fold = 5
 
@@ -326,7 +326,7 @@ write.table(pumice_iv_output, iv_path, quote=FALSE, sep = "\t", row.names = FALS
 cat( "UPDATE: Processing epigenomic data\n" , file=stderr())
 geno_bed = data.frame("chr" = paste("chr", geno$chromosome, sep = ""), "start" = geno$start, "end" = geno$end, "snpid" = rownames(geno))
 write.table(geno_bed %>% select(-c("snpid")), paste(opt$out, "/genotype_temp_total.bed", sep = ""), col.names = FALSE, row.names = FALSE, sep = "\t", quote = FALSE)
-arg = paste( opt$bedtool_path, " intersect -a ", paste(opt$out, "/genotype_temp_total.bed", sep = ""), " -b ", opt$epi_path,
+arg = paste( opt$bedtools_path, " intersect -a ", paste(opt$out, "/genotype_temp_total.bed", sep = ""), " -b ", opt$epi_path,
                 " -wa -wb > ", paste(opt$out, "/genotype_epigenomic_overlap_total.bed", sep = ""), sep = "" )
 system(arg)
 
