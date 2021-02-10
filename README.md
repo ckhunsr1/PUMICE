@@ -59,14 +59,6 @@ Outputs from the step 1 using example input data are provided [here](https://git
 
 Outputs from the step 2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
