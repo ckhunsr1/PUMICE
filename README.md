@@ -16,7 +16,7 @@ A list of R packages required for PUMICE: optparse, data.table, tidyr, tidyverse
 ### Tool overview
 
 To run PUMICE, two steps are required.
-1. First, we need to run nested cross-validation to determine which window type and penalty factor are optimal (i.e. least mean cross-validated error) for each gene. This step is computationally intensive; therefore, we require users to run this step using parallel computation for the 22 autosomes and each window type. Users can further split the job into multiple jobs using the options total_file_num and file_num. 
+1. First, we need to run nested cross-validation to determine which window type and penalty factor are optimal (i.e. least mean cross-validated error) for each gene. This step is computationally intensive; therefore, we require users to run this step using parallel computation for the 22 autosomes and each window type. Users can further split each job into multiple jobs using the options total_file_num and file_num. 
 ```
    Rscript PUMICE.nested_cv.R
       --geno [Path to genotype data]
