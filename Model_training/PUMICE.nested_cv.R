@@ -278,7 +278,7 @@ option_list = list(
 		make_option("--type", action="store", default=NA, type='character',
                                 help="Specific 3D genome windows being used/Specific constant window size being used (in kb). Options: loop, tad, pchic, 250, 1000, etc. [required]"),
 		make_option("--window_path", action="store", default=NA, type='character',
-				help="Path to 3D genome windows bed file. [only required for method == 3d]"),
+				help="Path to 3D genome window file. [only required for method == 3d]"),
 		make_option("--bedtools_path", action="store", default=NA, type='character',
                                 help="Path to bedtools software. [required]"),
 		make_option("--epi_path", action="store", default=NA, type='character',
