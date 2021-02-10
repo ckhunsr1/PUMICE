@@ -16,7 +16,7 @@ Rscript PUMICE.nested_cv.R \
 	--method ${MET} \
 	--type ${TYPE} \
 	--window_path ${INPUT}/LCL_chr22_${type}.txt \
-	--bedtool_path ${BEDTOOLS} \
+	--bedtools_path ${BEDTOOLS} \
 	--epi_path ${INPUT}/ENCFF028SGJ_chr22_screen.bed \
 	--fold 5 \
 	--total_file_num 10 \
