@@ -53,10 +53,11 @@ To run PUMICE, two steps are required.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-We provided example data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip).
+We provided example input data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip).
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Outputs from the step 1 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_nestedcv.zip).
 
+Outputs from the step 2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
 
 <!-- ROADMAP -->
