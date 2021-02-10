@@ -55,9 +55,11 @@ To run PUMICE, two steps are required.
 
 We provided example input data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip).
 
-Outputs from the step 1 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_nestedcv.zip).
+Example of shell script used to run step1  can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_nested_cv.sh).
+* Outputs from the step1 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_nestedcv.zip).
 
-Outputs from the step 2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
+Example of shell script used to run step2 can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_compute_weights.sh).
+* Outputs from the step2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
 <!-- LICENSE -->
 ## License
