@@ -14,7 +14,7 @@ PUMICE requires R 4.0, several R packages, and bedtools.
 
 ### Prerequisites
 
-A list of R packages required for PUMICE: optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret.
+A list of R packages required for PUMICE includes optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret.
 
 
 ### Tool overview
