@@ -22,6 +22,16 @@ To run PUMICE, two steps are required.
       --geno [Path to genotype data]
       --chr [Chromosome number]
       --exp [Path to expression data]
+      --out [Path to output directory]
+      --method [Window type to be used for creating models]
+      --type [Specific 3D genome windows being used/Specific constant window size being used (in kb)]
+      --window_path [Path to 3D genome windows bed file]
+      --bedtool_path [Path to bedtools software]
+      --epi_path [Path to epigenomic data]
+      --fold [umber of folds to be performed for nested cross-validation]
+      --total_file_num [Number of total jobs to be splitted into]
+      --file_num [Job number]
+      --noclean [Do not delete any temporary files]
    ```
 2. Second, we need to run cross-validaiton to create gene expression prediction models.
 ```sh
