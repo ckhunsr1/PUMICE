@@ -6,7 +6,7 @@ PUMICE (Prediction Using Models Informed by Chromatin conformations and Epigenom
 <!-- GETTING STARTED -->
 ## Getting Started
 
-PUMICE requires R 4.0 and several R packages.
+PUMICE requires R 4.0, several R packages, and bedtools.
 
 ### Prerequisites
 
