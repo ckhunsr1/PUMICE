@@ -25,10 +25,10 @@ To run PUMICE, two steps are required.
       --out [Path to output directory]
       --method [Window type to be used for creating models]
       --type [Specific 3D genome windows being used/Specific constant window size being used (in kb)]
-      --window_path [Path to 3D genome windows bed file]
-      --bedtool_path [Path to bedtools software]
+      --window_path [Path to 3D genome window file]
+      --bedtools_path [Path to bedtools software]
       --epi_path [Path to epigenomic data]
-      --fold [umber of folds to be performed for nested cross-validation]
+      --fold [Number of folds to be performed for nested cross-validation]
       --total_file_num [Number of total jobs to be splitted into]
       --file_num [Job number]
       --noclean [Do not delete any temporary files]
@@ -46,7 +46,7 @@ To run PUMICE, two steps are required.
       --domain_path [Path to domain window file]
       --bedtool_path [Path to bedtools software]
       --epi_path [Path to epigenomic data]
-      --fold [umber of folds to be performed for nested cross-validation]
+      --fold [Number of folds to be performed for cross-validation]
       --noclean [Do not delete any temporary files]
    ```
 
