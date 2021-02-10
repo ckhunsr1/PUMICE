@@ -19,6 +19,9 @@ To run PUMICE, two steps are required.
 1. First, we need to run nested cross-validation to determine which window type and penalty factor are optimal (i.e. least mean cross-validated error) for each gene.
 ```sh
    Rscript PUMICE.nested_cv.R
+      --geno [Path to genotype data]
+      --chr [Chromosome number]
+      --exp [Path to expression data]
    ```
 2. Second, we need to run cross-validaiton to create gene expression prediction models.
 ```sh
