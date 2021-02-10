@@ -82,4 +82,4 @@ Chachrit (Poom) Khunsriraksakul - [@ChachritK](https://twitter.com/ChachritK) - 
 * [Dajiang J. Liu](https://dajiangliu.blog/)
 * [Othneil Drew](https://github.com/othneildrew) (README template)
 
-[product-screenshot]: https://github.com/ckhunsr1/PUMICE/blob/master/image/PUMICE_overview_github.tif
+[product-screenshot]: https://github.com/ckhunsr1/PUMICE/blob/master/image/screenshot.png
