@@ -17,13 +17,13 @@ A list of R packages required for PUMICE: optparse, data.table, tidyr, tidyverse
 
 To run PUMICE, two steps are required.
 1. First, we need to run nested cross-validation to determine which window type and penalty factor are optimal (i.e. least mean cross-validated error) for each gene.
-```sh
+```
    Rscript PUMICE.nested_cv.R
       --geno [Path to genotype data]
       --chr [Chromosome number]
       --exp [Path to expression data]
       --out [Path to output directory]
-      --method [Window type to be used "for" creating models]
+      --method [Window type to be used for creating models]
       --type [Specific 3D genome windows being used/Specific constant window size being used (in kb)]
       --window_path [Path to 3D genome windows bed file]
       --bedtool_path [Path to bedtools software]
