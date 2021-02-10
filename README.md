@@ -34,8 +34,20 @@ To run PUMICE, two steps are required.
       --noclean [Do not delete any temporary files]
    ```
 2. Second, we need to run cross-validation to create gene expression prediction model using window type and penalty factor derived from the first step.
-```sh
+```
    Rscript PUMICE.compute_weights.R
+      --geno [Path to genotype data]
+      --chr [Chromosome number]
+      --exp [Path to expression data]
+      --out [Path to output directory]
+      --pchic_path [Path to pchic window file]
+      --loop_path [Path to loop window file]
+      --tad_path [Path to tad window file]
+      --domain_path [Path to domain window file]
+      --bedtool_path [Path to bedtools software]
+      --epi_path [Path to epigenomic data]
+      --fold [umber of folds to be performed for nested cross-validation]
+      --noclean [Do not delete any temporary files]
    ```
 
 <!-- USAGE EXAMPLES -->
