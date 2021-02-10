@@ -1,10 +1,3 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
 <!-- ABOUT THE PROJECT -->
 ## PUMICE
 
@@ -17,26 +10,20 @@ PUMICE requires R 4.0 and several R packages.
 
 ### Prerequisites
 
-A list of R packages required for PUMICE: optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret
+A list of R packages required for PUMICE: optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret.
 
 
-### Installation
+### Tool overview
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+To run PUMICE, two steps are required.
+1. First, we need to run nested cross-validation to determine which window type and penalty factor are optimal (i.e. least mean cross-validated error) for each gene.
+```sh
+   Rscript PUMICE.nested_cv.R
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+2. Second, we need to run cross-validaiton to create gene expression prediction models.
+```sh
+   Rscript PUMICE.compute_weights.R
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
