@@ -57,7 +57,7 @@ To run PUMICE, two steps are required.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-We provided example input data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip). Data were subsetted from 1000 Genome Project Phase 3 and GEUVADIS datasets.
+We provided example input data [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_input.zip). Data were subsetted from 1000 Genome Project Phase 3 and GEUVADIS datasets to be used as an example to run the script.
 
 Example of shell script used to run step1  can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_nested_cv.sh).
 * Outputs from the step1 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_nestedcv.zip).
