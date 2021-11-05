@@ -67,7 +67,7 @@ Example of shell script used to run step1  can be found [here](https://github.co
 Example of shell script used to run step2 can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_compute_weights.sh).
 * Outputs from the step2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
-Precomputed models (hg19) can be found [here](https://github.com/ckhunsr1/PUMICE/tree/master/models).
+Precomputed models trained in 48 tissues from GTEx V7 (hg19) can be found [here](https://github.com/ckhunsr1/PUMICE/tree/master/models).
 
 <!-- LICENSE -->
 ## License
