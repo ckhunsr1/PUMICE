@@ -7,6 +7,10 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
    <img src="https://github.com/ckhunsr1/PUMICE/blob/master/image/PUMICE_overview.png" width="934" height="166.7">
 </p>
 
+## Bugs
+
+09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation. We are in the process of renaming "spearman_cor" to "spearman_cor2" in the "modelattribute".
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
