@@ -9,7 +9,7 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
 
 ## Bugs
 
-09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation. We are in the process of fixing this.
+09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation in the "spearman_cor" of "modelattribute". We are in the process of fixing this.
 
 <!-- GETTING STARTED -->
 ## Getting Started
