@@ -10,6 +10,7 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
 ## Bugs
 
 09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation in the "spearman_cor" of "modelattribute". We are in the process of fixing this.
+
 09/18/2022: We have fixed the problem and uploaded the updated version of the GTEx V7 precomputed models [here](https://github.com/ckhunsr1/PUMICE/tree/master/models_gtex_v7).
 
 <!-- GETTING STARTED -->
