@@ -11,7 +11,7 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
 
 09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation in the "spearman_cor" of "modelattribute". We are in the process of fixing this.
 
-09/18/2022: We have fixed the problem and uploaded the updated version of the GTEx V7 precomputed models [here](https://github.com/ckhunsr1/PUMICE/tree/master/models_gtex_v7).
+09/18/2022: We have fixed the problem and uploaded the updated version of the GTEx V7 precomputed models ("models_GTEx_v7" folder)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -73,7 +73,7 @@ Example of shell script used to run step1  can be found [here](https://github.co
 Example of shell script used to run step2 can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_compute_weights.sh).
 * Outputs from the step2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
-Precomputed models trained in 48 tissues from GTEx V7 (hg19) can be found [here](https://github.com/ckhunsr1/PUMICE/tree/master/models_gtex_v7).
+Precomputed models trained in 48 tissues from GTEx V7 (hg19) can be found in "models_GTEx_v7" folder.
 
 <!-- LICENSE -->
 ## License
