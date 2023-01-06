@@ -9,11 +9,11 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
 
 ## Bugs
 
-01/05/2023: Fix issue with processing constant windows mapping file in PUMICE.compute_weights.R.
+**01/05/2023**: Fix issues when genotype input contain rare variants in both PUMICE.nested_cv.R and PUMICE.compute_weights.R. Also, fix issue with processing constant windows mapping file in PUMICE.compute_weights.R.
 
-09/13/2022: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation in the "spearman_cor" of "modelattribute". We are in the process of fixing this.
+**09/13/2022**: For precomputed models we uploaded onto the Github so far, we reported the **square** of Spearman's correlation in the "spearman_cor" of "modelattribute". We are in the process of fixing this.
 
-09/18/2022: We have fixed the problem and uploaded the updated version of the GTEx V7 precomputed models ("models_GTEx_v7" folder)
+**09/18/2022**: We have fixed the problem and uploaded the updated version of the GTEx V7 precomputed models ("models_GTEx_v7" folder)
 
 <!-- GETTING STARTED -->
 ## Getting Started
