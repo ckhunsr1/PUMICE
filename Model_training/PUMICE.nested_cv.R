@@ -250,6 +250,7 @@ cleanup = function() {
 					##Import library##
 #########################################################################################################################
 options(stringsAsFactors=F)
+options(scipen=999)
 library(optparse)
 library(tidyr)
 library(dplyr)
