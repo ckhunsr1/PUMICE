@@ -273,7 +273,6 @@ cauchy.p <- function(pval,weight=NULL) {
 }
 
 ##########################################################################################################################################################
-.libPaths("~/work/R_library")
 library(rareGWAMA)
 library(BEDMatrix)
 library("optparse")
