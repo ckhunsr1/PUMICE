@@ -72,6 +72,7 @@ For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first p
       --utmost_weight [Path to UTMOST db file]
       --out [Path to output file directory and name]
    ```
+"twas.z.u" and "pval.u" refer to TWAS Z score and associated P value for UTMOST. "twas.z.p" and "pval.p" refer to TWAS Z score and associated P value for PUMICE. "twas.z.cauchy" and "pval.cauchy" refer to TWAS Z score and associated P value for PUMICE+.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
