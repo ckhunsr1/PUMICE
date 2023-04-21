@@ -8,6 +8,7 @@ PUMICE (**P**rediction **U**sing **M**odels **I**nformed by **C**hromatin confor
 </p>
 
 ## Bugs
+**04/21/2023**: Update PUMICE+ code and README.
 
 **01/05/2023**: Fix issues when genotype input contain rare variants in both PUMICE.nested_cv.R and PUMICE.compute_weights.R. Also, fix issue with processing constant windows mapping file in PUMICE.compute_weights.R.
 
