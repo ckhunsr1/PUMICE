@@ -87,6 +87,9 @@ Example of shell script used to run step1  can be found [here](https://github.co
 Example of shell script used to run step2 can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_compute_weights.sh).
 * Outputs from the step2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
+Example of shell script used to run PUMICE+ can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_pumice+.sh).
+* Output from PUMICE+ using example input data is provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/pumice%2B_output_chr22.txt).
+
 Precomputed PUMICE and UTMOST models trained in 48 tissues from GTEx V7 (hg19) can be found in "models_GTEx_v7" folder.
 
 <!-- LICENSE -->
