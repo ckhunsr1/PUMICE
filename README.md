@@ -22,8 +22,7 @@ PUMICE requires R 4.0, several R packages, and bedtools.
 
 ### Prerequisites
 
-A list of R packages required for PUMICE includes optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret.
-
+A list of R packages required for PUMICE includes optparse, data.table, tidyr, tidyverse, dplyr, IRanges, GenomicRanges, genefilter, glmnet, caret, rareGWAMA, BEDMatrix, RSQLite.
 
 ### Tool overview
 
@@ -62,6 +61,18 @@ To run PUMICE, two steps are required.
       --noclean [Do not delete any temporary files]
    ```
 
+For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first perform TWAS association analyses [Gusev et al, 2016] for PUMICE and UTMOST separately. It then will perform Cauchy combination test analyses between PUMICE and UTMSOT, which are PUMICE+ results.  **PUMICE+.association_test.R** script can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/Association_test/PUMICE%2B.association_test.R).
+```
+   Rscript PUMICE+.association_test.R
+      --geno [Path to genotype data in PLINK format]
+      --chr [Chromosome number]
+      --gwas [Path to GWAS summary statistic]
+      --out [Path to output directory]
+      --pumice_weight [Path to PUMICE db file]
+      --utmost_weight [Path to UTMOST db file]
+      --out [Path to output file directory and name]
+   ```
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -75,7 +86,7 @@ Example of shell script used to run step1  can be found [here](https://github.co
 Example of shell script used to run step2 can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/running_compute_weights.sh).
 * Outputs from the step2 using example input data are provided [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/example_output_weights.zip).
 
-Precomputed models trained in 48 tissues from GTEx V7 (hg19) can be found in "models_GTEx_v7" folder.
+Precomputed PUMICE and UTMOST models trained in 48 tissues from GTEx V7 (hg19) can be found in "models_GTEx_v7" folder.
 
 <!-- LICENSE -->
 ## License
