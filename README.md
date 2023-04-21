@@ -61,7 +61,7 @@ To run PUMICE, two steps are required.
       --noclean [Do not delete any temporary files]
    ```
 
-For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first perform TWAS association analyses [Gusev et al, 2016] for PUMICE and UTMOST separately. It then will perform Cauchy combination test analyses between PUMICE and UTMSOT, which are PUMICE+ results.  **PUMICE+.association_test.R** script can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/Association_test/PUMICE%2B.association_test.R).
+For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first perform TWAS association analyses [Gusev et al, 2016] for PUMICE and UTMOST separately. It then will perform Cauchy combination test analyses between PUMICE and UTMOST, which are PUMICE+ results. It is important to make sure that the effect allele(s) for GWAS summary statistics and expression prediction models are the same. Uploaded prediction models have reference allele as effect allele. **PUMICE+.association_test.R** script can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/Association_test/PUMICE%2B.association_test.R).
 ```
    Rscript PUMICE+.association_test.R
       --geno [Path to genotype data in PLINK format]
