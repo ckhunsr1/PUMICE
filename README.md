@@ -62,7 +62,7 @@ To run PUMICE, two steps are required.
       --noclean [Do not delete any temporary files]
    ```
 
-For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first perform TWAS association analyses [Gusev et al, 2016] for PUMICE and UTMOST separately. It then will perform Cauchy combination test analyses between PUMICE and UTMOST, which are PUMICE+ results. **It is important to make sure that the effect allele in GWAS summary statistics and Allele 1 in PLINK reference panel are the same as the effect allele in db files. Uploaded prediction models have reference allele as effect allele and the list of variants used to train the models can be found** [here] (https://github.com/ckhunsr1/PUMICE/blob/master/examples/gtex_variant_clean.txt.gz). **Variant ID is formatted as chr_pos_ref_alt_b37.** 
+For TWAS association testings, we can run PUMICE+. Of note, PUMICE+ will first perform TWAS association analyses [Gusev et al, 2016] for PUMICE and UTMOST separately. It then will perform Cauchy combination test analyses between PUMICE and UTMOST, which are PUMICE+ results. **It is important to make sure that the effect allele in GWAS summary statistics and Allele 1 in PLINK reference panel are the same as the effect allele in db files. Uploaded prediction models have reference allele as effect allele and the list of variants used to train the models can be found** [here](https://github.com/ckhunsr1/PUMICE/blob/master/examples/gtex_variant_clean.txt.gz). **Variant ID is formatted as chr_pos_ref_alt_b37.** 
 
 **PUMICE+.association_test.R** script can be found [here](https://github.com/ckhunsr1/PUMICE/blob/master/Association_test/PUMICE%2B.association_test.R).
 ```
