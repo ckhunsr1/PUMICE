@@ -225,28 +225,28 @@ pumice_plus_twas <- function(pumice.weight, utmost.weight, gwas.result) {
             cov.stat[2,1] <- cov.stat[1,2];
             cor.stat <- cov2cor(cov.stat);
 
-            pval.minp[ii] <- pvt(stat.max,rep(0,2),cor.stat,alternative='two.sided');
+            #pval.minp[ii] <- pvt(stat.max,rep(0,2),cor.stat,alternative='two.sided');
             pval.cauchy[ii] <- cauchy.p(c(pval.u[ii],pval.p[ii]));
 	    
 	    if ( abs(twas.z.u[ii]) > abs(twas.z.p[ii]) ) {
-		     twas.z.minp[ii] <- sign(twas.z.u[ii])*sqrt(qchisq(pval.minp[ii],df=1,lower.tail=F))
+		     #twas.z.minp[ii] <- sign(twas.z.u[ii])*sqrt(qchisq(pval.minp[ii],df=1,lower.tail=F))
 		     twas.z.cauchy[ii] <- sign(twas.z.u[ii])*sqrt(qchisq(pval.cauchy[ii],df=1,lower.tail=F))
 	    } else {
-		     twas.z.minp[ii] <-	sign(twas.z.p[ii])*sqrt(qchisq(pval.minp[ii],df=1,lower.tail=F))
+		     #twas.z.minp[ii] <-	sign(twas.z.p[ii])*sqrt(qchisq(pval.minp[ii],df=1,lower.tail=F))
 		     twas.z.cauchy[ii] <- sign(twas.z.p[ii])*sqrt(qchisq(pval.cauchy[ii],df=1,lower.tail=F))
 	    }
 
 	}
 	if(is.na(stat.u) & !is.na(stat.p)) {
-            twas.z.minp[ii] <- twas.z.p[ii]
+            #twas.z.minp[ii] <- twas.z.p[ii]
             twas.z.cauchy[ii] <- twas.z.p[ii]
-            pval.minp[ii] <- pval.p[ii];
+            #pval.minp[ii] <- pval.p[ii];
             pval.cauchy[ii] <- pval.p[ii];
         }
 	if(!is.na(stat.u) & is.na(stat.p)) {
-            twas.z.minp[ii] <- twas.z.u[ii]
+            #twas.z.minp[ii] <- twas.z.u[ii]
             twas.z.cauchy[ii] <- twas.z.u[ii]
-            pval.minp[ii] <- pval.u[ii];
+            #pval.minp[ii] <- pval.u[ii];
             pval.cauchy[ii] <- pval.u[ii];
         }
 	b <- Sys.time();
